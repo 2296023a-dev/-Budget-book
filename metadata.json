@@ -1,0 +1,7 @@
+{
+  "name": "Snap Household Account Book",
+  "description": "A smart expense tracker that uses AI to scan receipts and automatically extract details.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
