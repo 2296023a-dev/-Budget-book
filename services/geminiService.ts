@@ -18,6 +18,7 @@ const processReceiptImage = async (file: File): Promise<ReceiptData> => {
     return mockData;
   }
 
+  // Initialize SDK
   const genAI = new GoogleGenerativeAI(apiKey);
 
   // Convert file to base64
@@ -34,7 +35,7 @@ const processReceiptImage = async (file: File): Promise<ReceiptData> => {
   });
 
   try {
-    // Use gemini-1.5-flash as the most standard model name
+    // getGenerativeModel with specific model
     const model = genAI.getGenerativeModel({
       model: "gemini-1.5-flash",
       generationConfig: {
